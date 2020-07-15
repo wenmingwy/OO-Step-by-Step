@@ -15,6 +15,10 @@ public class Teacher extends Person {
         return "My name is Matt. I am 30 years old. I am a Teacher.";
     }
 
+    public String Message(){
+        return "My name is Tom. I am 21 years old. I am a student of Class 2 now.";
+    }
+
     public String getJob() {
         return job;
     }

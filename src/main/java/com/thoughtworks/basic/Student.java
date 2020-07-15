@@ -1,28 +1,19 @@
 package com.thoughtworks.basic;
 
-import java.util.List;
-
+import com.thoughtworks.basic.SendMsg;
 public class Student extends Person{
-    private Integer classNumber;
+    private SendMsg sendMsg;
 
     public Student() {
-    }
-
-    public Student(String name, String age, Integer classNumber) {
-        super(name, age);
-        this.classNumber = classNumber;
     }
 
     public String introduce(){
         return "My name is Tom. I am 21 years old. I am a Student of Class 2.";
     }
 
-    public void setClassNumber() {
-        this.classNumber = classNumber;
-    }
-
-    public Integer getClassNumber() {
-        return classNumber;
+// 当信息改变的时候发送消息
+    public void Message(){
+        System.out.println("My name is Tom. I am 21 years old. I am a student of Class 2 now.");
     }
 
 }
